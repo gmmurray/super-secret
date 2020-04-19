@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Button, Jumbotron } from 'react-bootstrap';
+import Result from './result';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Container>
+			<Jumbotron className="mt-2">
+				<h1>Super Secret Password Generator</h1>
+				<p>Fill out the simple form below to generate something a little better than password123</p>
+			</Jumbotron>
+			<Result />
+		</Container>
+	);
 }
 
 export default App;
